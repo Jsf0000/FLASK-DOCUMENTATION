@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+{% block title %} Index Page {% endblock %}
+
+{% block content %}
+    <h1> Hello World </h1>
+    <form method="POST" action="{{url_for('index')}}">
+        <input type="text" name="username" placeholder="Username">
+        <br>
+        <input type="password" name="password" placeholder="password">
+        <br>
+        <input type="submit" value="Login">
+    </form>
+
+    <h1> JavaScript JSON Request</h1>
+    <button id="post_button">SEND</button>
+
+
+{% endblock %}
